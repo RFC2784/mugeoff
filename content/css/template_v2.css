@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+  vertical-align: baseline;
+}
+
+body {
+	background-color:#000000;
+	background-image: url("../images/background_v2.jpg"); 
+	background-position: top center;
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+	-o-background-size: cover; /* pour Opera */
+	background-size: cover; /* version standardisée */
+	background-repeat:repeat;
+    background-attachment: fixed;
+	text-decoration: none;
+}
+
+#header {
+	margin-top : 0px;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : center;
+    color : #ffffff;
+}
+
+#header img, #content img, #footer img {
+	max-width : 100%;
+}
+
+#content, #footer {
+	max-width : 750px;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : center;
+}
+#content {
+	margin-top : 20px;
+	line-height: 20%;
+}
+#footer {
+	margin-top : 10%;
+}
+#content table {
+	table-layout:auto;
+}
+
+.aspect-video {
+width: 100%;
+height: 0;
+padding-bottom: 56%;
+position: relative;
+}
+.aspect-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+.aspect-promo {
+width: 100%;
+height: 0;
+padding-bottom: 90%;
+position: relative;
+}
+.aspect-promo iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+#social {
+	max-width : 560px;
+	margin-top : 0px;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : center;
+	font-weight : bold;
+	font-style: italic;
+}
+
+#social h1 {
+	font-size : 25px;
+}
+
+#footer_links {
+	clear : both;
+	max-width : 206px;
+	margin-top : none;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : center;
+}
+
+#twitter, #facebook, #instagram, #twitch, #youtube {
+	float : left;
+	margin: none;
+	display:block;
+	background : url("../images/menu.png") no-repeat scroll 0 0 transparent;
+    text-decoration : none;
+	width : 112px;
+	height : 112px;	
+}
+
+#twitter span, #facebook span, #instagram span, #twitch span, #youtube span, #donate span, #content span, #footer span {
+  display:inline-block;
+  text-indent: -5000px;
+}
+
+#facebook {
+    background-position : 0 0px;
+}
+
+#facebook:hover ,#facebook:active ,#facebook:focus {
+    background-position : 0 -112px;
+}
+
+#twitter {
+    background-position : -112px 0px;
+}
+
+#twitter:hover ,#twitter:active ,#twitter:focus {
+    background-position : -112px -112px;
+}
+
+#youtube {
+    background-position : -224px 0px;
+}
+
+#youtube:hover ,#youtube:active ,#youtube:focus {
+    background-position : -224px -112px;
+}
+
+#twitch {
+    background-position : -336px 0px;
+}
+
+#twitch:hover ,#twitch:active ,#twitch:focus {
+    background-position : -336px -112px;
+}
+
+#instagram {
+    background-position : -448px 0px;
+}
+
+#instagram:hover ,#instagram:active ,#instagram:focus {
+    background-position : -448px -112px;
+}
+
+#donate {
+	float : left;
+	margin: none;
+	display:block;
+	background : url("../images/paypal_donate.png") no-repeat scroll 0 0 transparent;
+	background-position : 0 0px;
+    text-decoration : none;
+	width : 206px;
+	height : 62px;	
+}
+#donate input {
+	border: none;
+}
+#donate:hover ,#donate:active ,#donate:focus {
+    background-position : 0 -62px;
+	border : none;
+}
+/* ECRAN INFERIEUR A 580px */
+@media screen and (max-width: 579px) {
+
+br {
+   display: block;
+   margin: 8px 0;
+   line-height: 8px;
+}
+
+#social h1 {
+	font-size : 13px;
+}
+
+#social {
+	max-width : 280px;
+}
+
+#twitter, #facebook, #instagram, #twitch, #youtube {
+	background : url("../images/menu_280.png") no-repeat scroll 0 0 transparent;
+	width : 56px;
+	height : 56px;	
+}
+
+#facebook:hover ,#facebook:active ,#facebook:focus {
+    background-position : 0 -56px;
+}
+
+#twitter {
+    background-position : -56px 0px;
+}
+
+#twitter:hover ,#twitter:active ,#twitter:focus {
+    background-position : -56px -56px;
+}
+
+#youtube {
+    background-position : -112px 0px;
+}
+
+#youtube:hover ,#youtube:active ,#youtube:focus {
+    background-position : -112px -56px;
+}
+
+#twitch {
+    background-position : -168px 0px;
+}
+
+#twitch:hover ,#twitch:active ,#twitch:focus {
+    background-position : -168px -56px;
+}
+
+#instagram {
+    background-position : -224px 0px;
+}
+
+#instagram:hover ,#instagram:active ,#instagram:focus {
+    background-position : -224px -56px;
+}
+
+#footer_links {
+	max-width : 150px;
+	margin-top : 15px;
+}
+
+#donate {
+	background : url("../images/paypal_donate_150.png") no-repeat scroll 0 0 transparent;
+	width : 150px;
+	height : 45px;	
+}
+
+#donate:hover ,#donate:active ,#donate:focus {
+    background-position : 0 -45px;
+}
+
+}
+/* ECRAN INFERIEUR A 300px */
+@media screen and (max-width: 299px) {
+	
+br {
+   display: block;
+   margin: 5px 0;
+   line-height: 5px;
+}
+
+#social h1 {
+	font-size : 10px;
+}
+
+#social {
+	max-width : 210px;
+}
+
+#twitter, #facebook, #instagram, #twitch, #youtube {
+	background : url("../images/menu_210.png") no-repeat scroll 0 0 transparent;
+	width : 42px;
+	height : 42px;	
+}
+
+#facebook:hover ,#facebook:active ,#facebook:focus {
+    background-position : 0 -42px;
+}
+
+#twitter {
+    background-position : -42px 0px;
+}
+
+#twitter:hover ,#twitter:active ,#twitter:focus {
+    background-position : -42px -42px;
+}
+
+#youtube {
+    background-position : -84px 0px;
+}
+
+#youtube:hover ,#youtube:active ,#youtube:focus {
+    background-position : -84px -42px;
+}
+
+#twitch {
+    background-position : -126px 0px;
+}
+
+#twitch:hover ,#twitch:active ,#twitch:focus {
+    background-position : -126px -42px;
+}
+
+#instagram {
+    background-position : -168px 0px;
+}
+
+#instagram:hover ,#instagram:active ,#instagram:focus {
+    background-position : -168px -42px;
+}
+
+#footer_links {
+	max-width : 100px;
+	margin-top : 8px;
+}
+
+#donate {
+	background : url("../images/paypal_donate_100.png") no-repeat scroll 0 0 transparent;
+	width : 100px;
+	height : 30px;	
+}
+
+#donate:hover ,#donate:active ,#donate:focus {
+    background-position : 0 -30px;
+}
+
+}
